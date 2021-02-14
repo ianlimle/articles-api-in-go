@@ -35,17 +35,17 @@ In order to keep this simple and focus on the basic concepts, we won’t be inte
    $ curl localhost:10000/all                          
    ```
    
-   POST a new article with {id}:
+   POST new article with {id}:
    ```
    $ curl -X POST -H 'Content-Type: application/json' -d '{"Id":"{id}","New Title":"New Title","desc":"New description","content":"New content"}' localhost:10000/article      
    ```
    
-   PUT (update) a new article with {id}:
+   PUT (update) article with {id}:
    ```
    $ curl -X PUT -H 'Content-Type: application/json' -d '{"Id":"{id}","Title":"Edited Title","desc":"Edited description","content":"Edited content"}' localhost:10000/article/{id}
    ```
    
-   GET a single article with {id}:
+   GET single article with {id}:
    ```
    $ curl localhost:10000/article/{id}      
    ```
